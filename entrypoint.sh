@@ -17,7 +17,7 @@ check_if_meta_yaml_file_exists() {
 }
 
 build_package(){
-    conda build -c conda-forge -c bioconda --output-folder . .
+    conda build -c conda-forge -c bioconda -c sepandhaghighi --output-folder . .
 }
 
 upload_package(){
